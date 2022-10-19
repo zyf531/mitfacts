@@ -1,0 +1,23 @@
+describe('test greet()',function () {
+    it('should be called',function () {
+        expect(greet('Elizabeth')).toBeCalled('Hello Elizabeth')
+console.log('test')
+    });
+
+    test ('should be called',function(){
+        expect(greet('null')).toMatch('Hello there')
+    });
+
+    test ('should be called',function(){
+        expect(greet('JOSE')).toBe('HELLO JOSE!')
+    });
+
+    test ('should be called',function(){
+        expect(greet(['Jose','Pep'])).toContain('Hello,Jose,Pep')
+    });
+
+    test ('should be called',function(){
+        expect(greet(['Alex','Arsene','Jose','Zidane'])).toContain('Hello,Alex,Arsene,Jose,Zidane')
+    });
+
+});
